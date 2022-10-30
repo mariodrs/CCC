@@ -1,7 +1,6 @@
 //Navigation
 const overlay = document.getElementById('overlay');
 const closeMenu = document.getElementById('close-menu');
-const close = document.getElementById('ul');
 
 
 document.getElementById('open-menu') .addEventListener('click', function() {
@@ -14,15 +13,9 @@ document.getElementById('close-menu').addEventListener('click', function(){
     overlay.classList.remove('show-menu')
 document.documentElement.style.overflow = 'visible';
 document.body.scroll = "yes";
-
 });
 
-document.getElementById('ul').addEventListener('click', function(){
-    overlay.classList.remove('show-menu')
-document.documentElement.style.overflow = 'visible';
-document.body.scroll = "yes";
 
-});
 
 
 
