@@ -337,7 +337,8 @@ nav {
   position: absolute;
   background: black;
   top: 0;
-  width: 100vw;
+  left: 0;
+  width: 70vw;
   height: 100vh;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
