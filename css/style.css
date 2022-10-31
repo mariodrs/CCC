@@ -113,6 +113,10 @@ header{
   z-index: 999999;
 }
 
+nav ul{
+  visibility: visible;
+}
+
 nav li, a, button{
   font-weight: 300;
   font-size: 14px;
@@ -184,10 +188,6 @@ a > button:hover{
   box-shadow: 3px black inset;
   cursor: pointer;
 
-}
-
-nav ul{
-  display: none;
 }
 
 nav ul span{
@@ -364,6 +364,10 @@ footer {
   float: right;
   cursor: pointer;
   opacity: 0;
+}
+
+#overlay ul{
+  display: none;
 }
 
 #overlay.active ul {
