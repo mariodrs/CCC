@@ -44,9 +44,10 @@ html,body {
   scroll-snap-align: start;
 }
 
-.contact{
+.contact-page{
   position: relative;
   height: 100vh;
+  background: white;
   z-index: 998;
 
   /* Scroll snap */
@@ -194,7 +195,7 @@ footer {
    left: 0;
    bottom: 0;
    width: 100%;
-   background: rgba(0,0,0,0.80);
+   background: rgba(0,0,0,0.60);
    color: white;
    text-align: center;
    z-index: 9999;
@@ -333,12 +334,12 @@ footer {
   display: inline-block;
 }
 
-nav {
+#overlay.active {
   position: absolute;
   background: black;
   top: 0;
   left: 0;
-  width: 70vw;
+  width: 80vw;
   height: 100vh;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -352,7 +353,7 @@ nav {
     overscroll-behavior: none !important;
 }
 
-nav .close-button {
+#overlay.active .close-button {
   display: block;
   margin: 1em 1.5em;
   width: 20px;
@@ -361,8 +362,7 @@ nav .close-button {
   opacity: 0;
 }
 
-
-nav ul {
+#overlay.active ul {
   position: relative;
   padding: 0;
   margin: 0;
@@ -374,24 +374,28 @@ nav ul {
       grid-template-columns: repeat(4, auto);
 }
 
-nav ul a {
+#overlay.active ul a {
   color: white;
   font-weight: bold;
   font-size: 1.25em;
 }
 
-nav ul span {
+#overlay.active ul span {
   color: gray;
   display: block;
   font-size: .65em;
   margin-top: 10px;
 }
 
-nav ul li {
+#overlay.active ul li {
   opacity: 0;
   margin-bottom: 5vw;
   display: inline-block;
   margin: 6vw 5vw 2vw 5vw;
+}
+
+#overlay ul li {
+  opacity: 0;
 }
 
 button{
@@ -399,53 +403,53 @@ button{
 }
 
 
-.show-menu {
+#overlay.active {
   display: block;
   -webkit-animation: slide-menu .6s ease-in forwards;
           animation: slide-menu .6s ease-in forwards;
 }
 
-.show-menu .close-button {
+#overlay.active .close-button {
   -webkit-animation: show-x 1s 1s forwards;
           animation: show-x 1s 1s forwards;
 }
 
-.show-menu li:nth-of-type(1) {
+#overlay.active li:nth-of-type(1) {
   -webkit-animation: menu-item-anim .6s forwards .6s ease-in-out;
           animation: menu-item-anim .6s forwards .6s ease-in-out;
 }
 
-.show-menu li:nth-of-type(2) {
+#overlay.active li:nth-of-type(2) {
   -webkit-animation: menu-item-anim .6s forwards .8s ease-in-out;
           animation: menu-item-anim .6s forwards .8s ease-in-out;
 }
 
-.show-menu li:nth-of-type(3) {
+#overlay.active li:nth-of-type(3) {
   -webkit-animation: menu-item-anim .6s forwards 1s ease-in-out;
           animation: menu-item-anim .6s forwards 1s ease-in-out;
 }
 
-.show-menu li:nth-of-type(4) {
+#overlay.active li:nth-of-type(4) {
   -webkit-animation: menu-item-anim .6s forwards 1.2s ease-in-out;
           animation: menu-item-anim .6s forwards 1.2s ease-in-out;
 }
 
-.show-menu li:nth-of-type(5) {
+#overlay.active li:nth-of-type(5) {
   -webkit-animation: menu-item-anim .6s forwards 1.4s ease-in-out;
           animation: menu-item-anim .6s forwards 1.4s ease-in-out;
 }
 
-.show-menu li:nth-of-type(6) {
+#overlay li:nth-of-type(6) {
   -webkit-animation: menu-item-anim .6s forwards 1.6s ease-in-out;
           animation: menu-item-anim .6s forwards 1.6s ease-in-out;
 }
 
-.show-menu li:nth-of-type(7) {
+#overlay li:nth-of-type(7) {
   -webkit-animation: menu-item-anim .6s forwards 1.8s ease-in-out;
           animation: menu-item-anim .6s forwards 1.8s ease-in-out;
 }
 
-.show-menu li:nth-of-type(8) {
+#overlay li:nth-of-type(8) {
   -webkit-animation: menu-item-anim .6s forwards 2s ease-in-out;
           animation: menu-item-anim .6s forwards 2s ease-in-out;
 }
