@@ -343,7 +343,7 @@ footer {
   background: black;
   top: 0;
   left: 0;
-  width: 80vw;
+  width: 100vw;
   height: 100vh;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
