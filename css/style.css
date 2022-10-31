@@ -18,10 +18,7 @@ html,body {
      background-attachment: fixed;
      background-size: cover;
      z-index: 998;
-
-  /* Scroll snap */
   scroll-snap-align: start;
-
 }
 
 .about-page{
@@ -29,8 +26,6 @@ html,body {
   height: 100vh;
   background: white;
   z-index: 998;
-
-  /* Scroll snap */
   scroll-snap-align: start;
 }
 
@@ -39,8 +34,6 @@ html,body {
   height: 100vh;
   background: purple;
   z-index: 998;
-
-  /* Scroll snap */
   scroll-snap-align: start;
 }
 
@@ -49,8 +42,6 @@ html,body {
   height: 100vh;
   background: white;
   z-index: 998;
-
-  /* Scroll snap */
   scroll-snap-align: start;
 }
 
@@ -73,7 +64,12 @@ html,body {
 
 .center-screen p{
   font-size: 30px;
-  color: 	#40E0D0;
+  color: #4ec2de;
+  /*color: 	#40E0D0;*/
+}
+
+.center-screen img{
+  width: 40vh;
 }
 
 .cv{
@@ -155,17 +151,16 @@ nav li a:hover::after {
   background: white;
   transform: scale(1,1);
 }
-/*  ------------- */
 
 .logo{
   margin-right: auto;
 }
 
 .logo img{
-  margin: 1vh 3vw;
+  margin: .5vh 3vw;
   cursor: pointer;
-  min-width: 35px;
-  max-width: 3vw;
+  min-height: 35px;
+  max-height: 3vw;
   height: auto;
 }
 
@@ -187,7 +182,6 @@ a > button:hover{
   border: 1px grey solid;
   box-shadow: 3px black inset;
   cursor: pointer;
-
 }
 
 nav ul span{
@@ -205,67 +199,14 @@ footer {
    z-index: 9999;
 }
 
-/*----------------------------------------------------------------
-[ Quick links page ]*/
-.list_containter > h2{
-  position: relative;
-  color: black;
-  margin: 0 auto;
-  padding: 100px 5px 30px 5px;
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: 700;
-  letter-spacing: 6px;
-  /*border: 2px solid green;*/
-  }
-
-#myInput{
-  position: relative;
-  background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-  background-size: 25px;
-  width: 250px;
-  font-size: calc(.4rem + .6vh);
-  padding: 12px 20px 12px 30px;
-  border: 1px solid #ddd;
-  left: 50%;
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-  text-align: center;
+footer span img {
+  margin: 1vh 1.5vh;
+  cursor: pointer;
+  min-width: 20px;
+  max-width: 1.5vw;
+  height: auto;
+  align-items: center;
 }
-
-#myTable{
-  position: relative;
-  left: 50%;
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 50%;
-
-  border-collapse: collapse; /* Collapse borders */
-  border: 1px solid #ddd; /* Add a grey border */
-  margin-top: 30px;
-
-  text-decoration: none;
-  font-size: calc(.4rem + .6vh);
-}
-
-#myTable th, #myTable td{
-  text-align: center; /* Left-align text */
-  padding: 12px; /* Add padding */
-  width: 33%
-}
-
-#myTable tr{
-  /* Add border to all table rows */
-  border: 1px solid #ddd;
-}
-
-#myTable tr.heading, #myTable tr:hover {
-  /* Add a grey background color to the table header and on hover */
-  background-color: #f1f1f1;
-}
-
 
 
 /*----------------------------------------------------------------
@@ -310,8 +251,8 @@ footer {
 }
 
 .portrait > img{
-  width: 30%;
-  border-radius: 50%;
+  width: 20%;
+  border-radius: 10%;
   margin-top: 3vw;
   margin-bottom: 3vw;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -409,7 +350,6 @@ footer {
 button{
   display: none;
 }
-
 
 #overlay.active {
   display: block;
@@ -530,78 +470,4 @@ button{
     opacity: 1;
   }
 }
-}
-
-
-
-
-
-/*----------------------------------------------------------------
-[ Modal Background ]*/
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 99; /* Sit on top */
-  padding-top: 70px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 80%;
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
-  text-align: center;
-  border-radius: 10px;
-}
-
-
-/* Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
-/* Close Button */
-.close {
-  color: white;
-  float: right;
-  line-height: 0;
-  font-size: 1.25em;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-header {
-  padding: 2px 16px;
-  background-color: #880808;
-  color: white;
-  border-radius: 10px 10px 0px 0px ;
-}
-
-.modal-body {
-  color: black;
-  padding: 2px 16px;
 }
