@@ -169,7 +169,7 @@ a > button{
   margin: 0 5vw 0 2vw;
   color: black;
   border: none;
-  padding: 1vh 1vw;
+  padding: 1vh 1.5vw;
   cursor: pointer;
   transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
@@ -180,10 +180,14 @@ a > button{
 a > button:hover{
   background: black;
   color: white;
-  border: .5px grey solid;
+  border: 1px grey solid;
   box-shadow: 3px black inset;
   cursor: pointer;
 
+}
+
+nav ul{
+  display: none;
 }
 
 nav ul span{
