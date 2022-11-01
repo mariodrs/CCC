@@ -1,6 +1,6 @@
 HTML CSSResult Skip Results Iframe
 EDIT ON
-body {
+#faq body {
   background: #f4f4f4;
   display: flex;
 }
@@ -12,7 +12,7 @@ body {
   text-align: center;
 }
 
-section.faq {
+#faq section.faq {
   padding-top: 2em;
   padding-bottom: 3em;
 }
@@ -155,17 +155,17 @@ section.faq {
 
 
 
-* {
+#faq * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html, body {
+#faq html, body {
   height: 100%;
 }
 
-a,
+#faq a,
 a:visited,
 a:focus,
 a:active,
@@ -174,22 +174,18 @@ a:link {
   outline: 0;
 }
 
-a {
+#faq a {
   color: currentColor;
   transition: .2s ease-in-out;
 }
 
-ul {
+#faq ul {
   padding: 0;
   list-style: none;
 }
 
-img {
+#faq img {
   vertical-align: middle;
   height: auto;
   width: 100%;
 }
-
-
-
-Resources1× 0.5× 0.25×Rerun
