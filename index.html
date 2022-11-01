@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="icon" href="images/logo.png">
     <title>Crystal Clean Carwash</title>
 </head>
@@ -32,7 +33,7 @@
           </li>
 
           <li class="cv">
-              <a href="Mario Dryas CV.pdf" target=”_blank”>FAQ</a>
+              <a href="#faq-page">FAQ</a>
               <span id="navspan">View out FAQ</span>
           </li>
 
@@ -43,7 +44,7 @@
 
       </ul>
   </nav>
-      <a href="Mario Dryas CV.pdf" target=”_blank”><button type="button" name="button">FAQ</button></a>
+      <a href="#faq-page"><button type="button" name="button">FAQ</button></a>
       <img src="images/burger-menu-white.svg" alt="menu" class="menu-btn" id="open-menu">
   </header>
   <!-- Navigation end -->
@@ -88,8 +89,115 @@
   <div id="services-page" class="services-page"></div>
   <!-- Services end -->
 
+  <!-- Services -->
+  <div id="faq-page" class="faq-page"></div>
+  <!-- Services end -->
+
   <!-- Contact -->
-  <div id="contact-page" class="contact-page"></div>
+<div id="contact-page" class="contact-page" >
+  <div class="left-side">
+
+        <table>
+
+          <tr>
+            <th><img src="images/phone.svg" alt="Phone" class="contact-svg"></th>
+            <th colspan="2" class="table-title">Phone</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td>+44 7713082032</td>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+
+
+            <tr>
+              <th><img src="images/email.svg" alt="Email" class="contact-svg"></th>
+              <th colspan="2" class="table-title">Email</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td>mario.dryas99@gmail.com</td>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+
+
+            <tr>
+              <th><img src="images/global.svg" alt="LinkedIn" class="contact-svg"></th>
+              <th colspan="2" class="table-title">LinkedIn</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td><a href="https://www.linkedin.com/in/mario-dryas/" target="_blank">www.linkedin.com/in/mario-dryas/</a></td>
+            </tr>
+
+              <tr>
+              <td></td>
+              </tr>
+
+        </table>
+
+        <div class="email-msg">
+          <p> *For all email enquiries, please complete the below form. I will aim to get back to you as quickly as possible.*</p>
+        </div>
+
+        <div class="scroll-downs">
+          <div class="mousey">
+            <div class="scroller"></div>
+          </div>
+        </div>
+
+        </div>
+
+
+<div class="right-side">
+  <form id="contact-form" method="post">
+
+    <span class="form-title">
+      Send a Message!
+    </span>
+
+    <!--Client side Form validation-->
+    <div class="alert alert-danger py-3 text-center" id="alert-danger"></div>
+    <div class="alert alert-success py-3 text-center" id="alert-success"></div>
+
+    <label class="form-text" for="name">Enter Full Name*</label>
+    <div class="form-fields">
+    <input class="input100" type="text" id="name" placeholder="Eg. Michael Jordan" required>
+    </div>
+
+    <label class="form-text" for="email">Enter Email*</label>
+    <div class="form-fields">
+    <input class="input100" type="text" id="email" placeholder="Eg. Example@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+    </div>
+
+    <label class="form-text" for="subject">Enter Subject*</label>
+    <div class="form-fields">
+    <input class="input100" type="text" id="subject" placeholder="Eg. Service Enquiry" required>
+    </div>
+
+    <label class="form-text" for="message">Enter Message*</label>
+    <div class="form-fields">
+      <textarea class="input100" id="message" placeholder="Enter your message..." required></textarea>
+    </div>
+
+    <div class="contact-form-btn">
+      <button class="send-btn" type="button" onClick="submitToAPI(event)">Send Message</button>
+    </div>
+  </form>
+</div>
+</div>
   <!-- Contact end -->
 
 
@@ -108,6 +216,7 @@
 <script src="scripts/script2.js"></script>
 <script src="scripts/typed.js/typed.js"></script>
 
+
 <script>
 var typed = new Typed('.type', {
   strings: [
@@ -121,6 +230,14 @@ var typed = new Typed('.type', {
    backSpeed: 60,
    loop: true
 });
+</script>
+
+
+<script type="text/javascript">
+addEventListener("load", function() {
+var viewport = document.querySelector("meta[name=viewport]");
+viewport.setAttribute("content", viewport.content + ", height=" + window.innerHeight);
+})
 </script>
 
 

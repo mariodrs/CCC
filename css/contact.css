@@ -5,32 +5,11 @@ height: -webkit-fill-available;
 }
 
 /*------------------------------------------------------------------
-[ Main contact page ]*/
-.contact-page {
-	position: absolute;
-  width: 100vw;
-	height: 100vh;
-	height: -webkit-fill-available;
-	background-color: #F5F5F5;
-  display: flex;
-	flex-wrap: wrap;
-	z-index: -1; /* puts whole contact page behind burger */
-	/* border: 2px blue solid; /* puts contact page behind burger */
-
-	touch-action: none !important;;
-	-webkit-overflow-scrolling: none !important;;
-	overflow: hidden !important;;
-	/* Other browsers */
-	overscroll-behavior: none !important;
-}
-
-
 
 /*------------------------------------------------------------------
 [ Contact page info - linkedIn etc ]*/
 table {
 	position: relative;
-	width: 70%;
 	margin: 0 auto;
 		-ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -44,7 +23,7 @@ table {
 table, th, td {
   border-collapse: collapse;
 	padding: 1vh;
-	/*border: .1px solid darkgrey;*/
+	/* border: 2px solid yellow;*/
 }
 
 td {
@@ -87,22 +66,13 @@ td a:hover {
 	letter-spacing: 1px;
   /*border: 2px solid yellow;*/
 	word-wrap: break-word;
-}
 
-iframe{
-	position: relative;
-	width: 100%;
-	height: 300px;
-}
-
-table tr:last-child{
-	visibility: collapse;
 }
 
 .left-side {
 	position: relative;
   width: 45vw; /* page ratio between left/right sides */
-
+	height: 100vh;
 	min-height: 100vh;            /* fall-back */
   min-height: -moz-available;
   min-height: -webkit-fill-available;
@@ -121,9 +91,10 @@ table tr:last-child{
 [ Mouse scroll animation ]*/
 .scroll-downs {
 	visibility: hidden;
-	position: relative;
-	width: 27px;
-	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 22.5vh;
 	margin: 0 auto;
 }
 
@@ -158,8 +129,11 @@ table tr:last-child{
 /*----------------------------------------------------------------
 [ Contact page form ]*/
 .right-side {
+	position: absolute;
+	top: 0;
+	left: 45vw;
   width: 55vw;/* page ratio between left/right sides */
-
+	height: 100vh;
 	min-height: 100vh;            /* fall-back */
   min-height: -moz-available;
   min-height: -webkit-fill-available;
@@ -343,20 +317,11 @@ textarea {
 /*------------------------------------------------------------------
 [ Responsiveness ]*/
 @media (max-width: 768px) {
-.contact-page{
-		touch-action: auto !important;;
-		-webkit-overflow-scrolling: auto !important;;
-		overflow: auto !important;;
-		/* Other browsers */
-		overscroll-behavior: auto !important;
-	/* Scroll snap */
-	scroll-snap-type: y mandatory;
-	overflow-y: scroll;
-	}
 
 	.right-side {
+		position: relative;
+		left: 0;
 	  width: 100vw; /* ensures each side fills 100% of viewport on mobile*/
-
 		min-height: 100vh;            /* fall-back */
 	  min-height: -moz-available;
 	  min-height: -webkit-fill-available;
@@ -396,14 +361,6 @@ textarea {
 
 	textarea {
 		height: 10vh;
-	}
-
-	iframe{
-		height: 200px;
-	}
-
-	table tr:last-child{
-		visibility: visible;
 	}
 
 }

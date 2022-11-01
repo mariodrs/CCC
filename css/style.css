@@ -32,6 +32,13 @@ html,body {
   z-index: 998;
 }
 
+.faq-page{
+  position: relative;
+  height: 100vh;
+  background: grey;
+  z-index: 998;
+}
+
 .contact-page{
   position: relative;
   height: 100vh;
