@@ -23,28 +23,27 @@ html,body {
 .about-page{
   position: relative;
   height: 100vh;
-  background: white;
   z-index: 998;
 }
 
 .services-page{
   position: relative;
   height: 100vh;
-  background: purple;
+  background: linear-gradient(-170deg, #4897A9 50%, #F8F8F8 50%);
   z-index: 998;
 }
 
 .faq-page{
   position: relative;
-  height: 100vh;
-  background: grey;
+  min-height: 100vh;
+  background: #F8F8F8;
   z-index: 998;
 }
 
 .contact-page{
   position: relative;
   height: 100vh;
-  background: white;
+  background: #F8F8F8;
   z-index: 998;
 }
 
@@ -231,7 +230,7 @@ footer span img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #F8F8F8;
   text-align: center;
   color: black;
   z-index: -99;
