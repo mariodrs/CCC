@@ -1,5 +1,3 @@
-HTML CSSResult Skip Results Iframe
-EDIT ON
 #faq body {
   background: #f4f4f4;
   display: flex;
@@ -21,7 +19,7 @@ EDIT ON
   text-align: left;
 }
 
-.transition, p, ul li i:before, ul li i:after {
+#faq .transition, p, ul li i:before, ul li i:after {
   transition: all 0.3s;
 }
 
@@ -94,18 +92,23 @@ EDIT ON
   box-shadow: 0 3px 10px -2px rgba(0,0,0,0.1);
   -webkit-tap-highlight-color: transparent;
 }
+
 #faq ul li + li {
   margin-top: 15px;
+  margin-bottom: 15px;
 }
+
 #faq ul li:last-of-type {
   padding-bottom: 0;
 }
+
 #faq ul li i {
   position: absolute;
   transform: translate(-6px, 0);
   margin-top: 28px;
   right: 15px;
 }
+
 #faq ul li i:before, ul li i:after {
   content: "";
   position: absolute;
@@ -113,12 +116,15 @@ EDIT ON
   width: 3px;
   height: 9px;
 }
+
 #faq ul li i:before {
   transform: translate(-2px, 0) rotate(45deg);
 }
+
 #faq ul li i:after {
   transform: translate(2px, 0) rotate(-45deg);
 }
+
 #faq ul li input[type=checkbox] {
   position: absolute;
   cursor: pointer;
@@ -128,9 +134,11 @@ EDIT ON
   opacity: 0;
   touch-action: manipulation;
 }
+
 #faq ul li input[type=checkbox]:checked ~ h2 {
   color: #000;
 }
+
 #faq ul li input[type=checkbox]:checked ~ p {
   /*margin-top: 0;*/
   max-height: 0;
@@ -138,9 +146,11 @@ EDIT ON
   opacity: 0;
   /*transform: translate(0, 50%);*/
 }
+
 #faq ul li input[type=checkbox]:checked ~ i:before {
   transform: translate(2px, 0) rotate(45deg);
 }
+
 #faq ul li input[type=checkbox]:checked ~ i:after {
   transform: translate(-2px, 0) rotate(-45deg);
 }
