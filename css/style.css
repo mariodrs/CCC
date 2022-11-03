@@ -36,7 +36,7 @@ html,body {
 
 .faq-page{
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background: #F8F8F8;
   z-index: 998;
 }
@@ -76,7 +76,8 @@ html,body {
   width: 40vh;
 }
 
-.cv{
+/*change class to hide desktop nav link replaced by nav button*/
+.contact-nav{
   display: none;
 }
 
