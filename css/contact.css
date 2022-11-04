@@ -23,6 +23,7 @@ table {
 table, th, td {
   border-collapse: collapse;
 	padding: 1vh;
+	/*border: 2px solid yellow;*/
 }
 
 td {
@@ -89,6 +90,7 @@ td a:hover {
 /*----------------------------------------------------------------
 [ Mouse scroll animation ]*/
 .scroll-downs {
+	display: none;
 	visibility: hidden;
 	position: relative;
 	left: 50%;
@@ -355,6 +357,7 @@ textarea {
 
 	.scroll-downs {
 		visibility: visible;
+		display: block;
 	}
 
 	.email-msg {

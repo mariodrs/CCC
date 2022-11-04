@@ -99,6 +99,12 @@ html,body {
   cursor: pointer;
 }
 
+header p{
+  font-size: calc(10px + .3vw);
+  margin: 0 5vw 0 0;
+  text-align: center;
+}
+
 nav .close-button {
   display: none;
 }
@@ -279,10 +285,6 @@ footer span img {
   display: block;
 }
 
-#open-menu.active{
-  display: none;
-}
-
 .cv{
   display: inline-block;
 }
@@ -313,10 +315,6 @@ footer span img {
   float: right;
   cursor: pointer;
   opacity: 0;
-}
-
-#overlay.active .menu-btn {
-visibility: hidden;
 }
 
 #overlay ul{
