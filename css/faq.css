@@ -30,7 +30,7 @@
 }
 
 #faq h1 {
-  font-size: 2rem;
+  font-size: calc(16px + 1.5vw);
   font-weight: 700;
   letter-spacing: 6px;
   color: #000;

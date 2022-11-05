@@ -246,7 +246,7 @@ footer span img {
 
 .about_containter > h1{
   color: black;
-  font-size: 2rem;
+  font-size: calc(16px + 1.5vw);
   font-weight: 700;
   letter-spacing: 6px;
   margin-bottom: 0;
@@ -255,12 +255,13 @@ footer span img {
 
 .about_containter > h2{
   color: #777;
-  font-size: 2rem;
+  font-size: calc(13px + 1.5vw);
   font-weight: 400;
   margin-top: 0;
 }
 
 .portrait > img{
+  min-width: 120px;
   width: 20%;
   border-radius: 10%;
   margin-top: 3vw;
