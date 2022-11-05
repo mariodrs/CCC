@@ -103,7 +103,7 @@ iframe{
 	transform: translateX(-50%);
 	width: 3px;
   padding: 10px;
-  height: 3.5vh;
+  height: 3vh;
   border: 2px solid #fff;
   border-radius: 15px;
   opacity: 0.75;
@@ -360,5 +360,4 @@ textarea {
 	textarea {
 		height: 10vh;
 	}
-
 }
