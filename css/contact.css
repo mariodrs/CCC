@@ -11,9 +11,9 @@ height: -webkit-fill-available;
 table {
 	position: relative;
 	margin: 0 auto;
-		-ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-	top: 50%;
+		-ms-transform: translateY(-65%);
+  transform: translateY(-65%);
+	top: 65%;
 	width: 90%;
 	color: white;
 	font-size: calc(.4rem + .6vh);
@@ -347,6 +347,12 @@ textarea {
 				/* Scroll snap */
 		scroll-snap-align: start;
   }
+
+	table {
+			-ms-transform: translateY(-40%);
+	  transform: translateY(-40%);
+		top: 40%;
+	}
 
 	.scroll-downs {
 		visibility: visible;
