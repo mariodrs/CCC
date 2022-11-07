@@ -22,16 +22,16 @@ html,body {
 
 .about-page{
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   z-index: 998;
 }
 
 .services-page{
   position: relative;
+  text-align: center;
   min-height: 100vh;
   background: linear-gradient(-170deg, #4897A9 50%, #F8F8F8 50%);
   z-index: 998;
-  border: 5px solid blue;
 }
 
 .faq-page{
@@ -101,7 +101,7 @@ html,body {
 
 header p{
   font-size: calc(10px + .3vw);
-  margin: 0 5vw 0 0;
+  margin: 0 3vw 0 0;
   text-align: center;
 }
 
@@ -175,7 +175,7 @@ nav li a:hover::after {
 }
 
 a > button{
-  margin: 0 5vw 0 2vw;
+  margin: 0 3vw 0 2vw;
   color: black;
   border: none;
   padding: 1vh 1.5vw;
@@ -277,9 +277,88 @@ footer img{
 
 
 /*----------------------------------------------------------------
+[ Services ]*/
+.container{
+  width: 300px;
+  display: inline-block;
+  margin: .5em;
+}
+
+.services-page h1 {
+  font-size: calc(16px + 1.5vw);
+  font-weight: 700;
+  letter-spacing: 6px;
+  color: #000;
+  padding: 2.5em 0 1em 0;
+  margin: 0;
+}
+
+.content {
+  position: relative;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.content-details h3{
+  color: #fff;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+/*----------------------------------------------------------------
 [ Navigation - mobile ]*/
 @media (max-width: 768px) {
-
 #myTable{
   width: 90%;
 }
