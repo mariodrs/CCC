@@ -279,9 +279,14 @@ footer img{
 /*----------------------------------------------------------------
 [ Services ]*/
 .container{
-  width: 300px;
   display: inline-block;
   margin: .5em;
+}
+
+.container img{
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
 }
 
 .services-page h1 {
