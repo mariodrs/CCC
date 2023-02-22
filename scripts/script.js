@@ -1,24 +1,50 @@
 //Navigation
-const overlay = document.getElementById('overlay');
-const closeMenu = document.getElementById('close-menu');
+const openbtn = document.getElementById('open-menu');
+const menu = document.getElementById('overlay');
 
+openbtn.onclick =  function functionName() {
+  openbtn.classList.toggle('active')
+  menu.classList.toggle('active')
+}
 
-document.getElementById('open-menu') .addEventListener('click', function() {
-    overlay.classList.add('show-menu');
-document.documentElement.style.overflow = 'hidden';
-document.body.scroll = "no";
-});
+document.onclick = function(clickEvent){
+  if (clickEvent.target.id !== 'open-menu' && clickEvent.target.id !== 'overlay') {
+    openbtn.classList.remove('active')
+    menu.classList.remove('active')
+  }
+}
 
-document.getElementById('close-menu').addEventListener('click', function(){
-    overlay.classList.remove('show-menu')
-document.documentElement.style.overflow = 'visible';
-document.body.scroll = "yes";
-});
+//Banner Animation
+var lastScrollTop = 0 ;
+  banner = document.getElementById("banner");
+  nav = document.getElementById("header");
+  //faq = document.getElementById("faq-title");
 
+window.addEventListener("scroll", function() {
+  var scrollTop = window.pageYOffset || document
+  .documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    banner.style.top = "-8vh";
+    banner.style.transition = ".5s";
 
+    nav.style.top = "0vh";
+    nav.style.transition = ".5s";
 
+    homecenter.style.top = "50%";
+    homecenter.style.transition = ".5s";
 
+  }else {
+    banner.style.top = "0";
+    banner.style.transition = ".5s";
 
+    nav.style.top = "8vh";
+    nav.style.transition = ".5s";
+
+    homecenter.style.top = "calc(50% + 4vh)";
+    homecenter.style.transition = ".5s";
+  }
+  //lastScrollTop = scrollTop;
+})
 
 //Client side Form validation
 function validate(){
@@ -87,4 +113,4 @@ if (xmlhttp.readyState === 4) {
 }
 
 document.getElementById('contact-form').reset();
-};
+}

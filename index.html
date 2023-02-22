@@ -12,37 +12,43 @@
 </head>
 <body>
 
+  <!-- Temp Banner -->
+  <div id="banner" class="banner">
+    <p>WE'RE OPENING SOON!</p>
+    <button type="button" name="button" class="banner-btn"> <a href="#">CLICK HERE TO PREBOOK!</a></button>
+  </div>
+
   <!-- Navigation -->
-  <header>
-    <a class="logo" href="#index-page"><img src="images/headerlogo.png" alt=""></a>
+  <header id="header">
+    <a class="logo" href="#home-page"><img src="images/headerlogo.png" alt=""></a>
   <nav id="overlay">
       <img src="images/close-button.svg" alt="menu" class="close-button"  id="close-menu">
       <ul>
 
-          <li>
-              <a href="#index-page">Home</a>
-              <span id="navspan">Site overview</span>
-          </li>
+        <li>
+            <a href="#home-page">Home</a>
+            <span id="navspan">Site overview</span>
+        </li>
 
-          <li>
-              <a href="#about-page">About</a>
-              <span id="navspan">A little bit about us</span>
-          </li>
+        <li>
+            <a href="#about-page">About</a>
+            <span id="navspan">A little bit about us</span>
+        </li>
 
-          <li>
-              <a href="#services-page">Services</a>
-              <span id="navspan">View our Services</span>
-          </li>
+        <li>
+            <a href="#services-page">Services</a>
+            <span id="navspan">View our Services</span>
+        </li>
 
-          <li>
-              <a href="#faq-page">FAQ</a>
-              <span id="navspan">View our FAQ</span>
-          </li>
+        <li>
+            <a href="#faq-page">FAQ</a>
+            <span id="navspan">View our FAQ</span>
+        </li>
 
-          <li class="contact-nav">
-              <a href="#contact-page">Contact</a>
-              <span id="navspan">Find our contact details</span>
-          </li>
+        <li class="contact-nav">
+            <a href="#contact-page">Contact</a>
+            <span id="navspan">Find our contact details</span>
+        </li>
 
       </ul>
 
@@ -51,16 +57,27 @@
       <p>  Mon-Sat: 08:00 - 18:00 <br> Sun: 09:00 - 17:00</p>
       <img src="images/burger-menu-white.svg" alt="menu" class="menu-btn" id="open-menu">
   </header>
+
+
   <!-- Navigation end -->
 
 
   <!-- Home -->
-  <div id="index-page" class="index-page">
-    <div class="center-screen">
+  <div id="home-page" class="home-page">
+    <div id="homecenter" class="homecenter">
+
       <img src="./images/logo.png" alt="portrait"></img>
       <p> <span class="type"> </span> </p>
+
+      <div class="home-btn">
+        <button type="button">Click here to pre-book your carwash!</button>
+      </div>
+
     </div>
   </div>
+
+  <!-- Home end -->
+
 
 
   <!-- About -->
@@ -92,84 +109,7 @@
 
   <!-- Services -->
   <div id="services-page" class="services-page">
-
-    <h1 class="title">Services</h1>
-
-    <div class="container">
-      <div class="content">
-          <div class="content-overlay"></div>
-          <img class="content-image" src="images/services/foam.png">
-          <div class="content-details fadeIn-top">
-            <h3>Automatic Touchless Foam Wash</h3>
-            <p>This is a short description</p>
-          </div>
-        </a>
-      </div>
-    </div>
-
-<div class="container">
-  <div class="content">
-      <div class="content-overlay"></div>
-      <img class="content-image" src="images/services/jetwash.jpg">
-      <div class="content-details fadeIn-top">
-        <h3>Self Service Jetwash</h3>
-        <p>This is a short description</p>
-      </div>
-    </a>
   </div>
-</div>
-
-<div class="container">
-  <div class="content">
-      <div class="content-overlay"></div>
-      <img class="content-image" src="images/services/interior.png">
-      <div class="content-details fadeIn-top">
-        <h3>Full Interior Valet</h3>
-        <p>This is a short description</p>
-      </div>
-    </a>
-  </div>
-</div>
-
-<div class="container">
-  <div class="content">
-      <div class="content-overlay"></div>
-      <img class="content-image" src="images/services/wax.jpg">
-      <div class="content-details fadeIn-top">
-        <h3>Exterior Ceramic Wax</h3>
-        <p>This is a short description</p>
-      </div>
-    </a>
-  </div>
-</div>
-
-<div class="container">
-  <div class="content">
-      <div class="content-overlay"></div>
-      <img class="content-image" src="images/services/window.jpg">
-      <div class="content-details fadeIn-top">
-        <h3>Windshield / Glass Repellents</h3>
-        <p>This is a short description</p>
-      </div>
-    </a>
-  </div>
-</div>
-
-<div class="container">
-  <div class="content">
-      <div class="content-overlay"></div>
-      <img class="content-image" src="images/services/vents.jpeg">
-      <div class="content-details fadeIn-top">
-        <h3>Interior & Air Con Sanitiser</h3>
-        <p>This is a short description</p>
-      </div>
-    </a>
-  </div>
-</div>
-
-</div>
-
-
   <!-- Services end -->
 
 
@@ -178,7 +118,7 @@
   <div id="faq-page" class="faq-page">
 
     <div id="faq">
-      <h1>FAQ</h1>
+      <h1 id="faq-title">FAQ</h1>
       <ul>
         <li>
           <input type="checkbox" checked>
@@ -216,6 +156,18 @@
           <h2>Hvad..?</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
         </li>
+        <li>
+          <input type="checkbox" checked>
+          <i></i>
+          <h2>Hvad..?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </li>
+        <li>
+          <input type="checkbox" checked>
+          <i></i>
+          <h2>Hvad..?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </li>
       </ul>
     </div>
 
@@ -223,61 +175,60 @@
   <!-- FAQ end -->
 
 
-
   <!-- Contact -->
 <div id="contact-page" class="contact-page" >
   <div class="left-side">
 
-        <table>
+    <table>
 
-          <tr>
-            <th><img src="images/clock.png" alt="Opening" class="contact-svg"></th>
-            <th colspan="2" class="table-title">Opening Hours</th>
-          <tr>
-            <td></td>
-            <td>Mon-Sat: 08:00 - 18:00 <br> Sun: 09:00 - 17:00 </td>
-          </tr>
+      <tr>
+      <th><img src="images/clock.png" alt="Opening" class="contact-svg"></th>
+      <th colspan="2" class="table-title">Opening Hours</th>
+      <tr>
+      <td></td>
+      <td>Mon-Sat: 08:00 - 18:00 <br> Sun: 09:00 - 17:00 </td>
+      </tr>
 
-          <tr>
-            <th><img src="images/phone.svg" alt="Opening" class="contact-svg"></th>
-            <th colspan="2" class="table-title">Phone</th>
-          </tr>
-          <tr>
-            <td></td>
-            <td>+44 7713082032</td>
-          </tr>
+      <tr>
+      <th><img src="images/phone.svg" alt="Opening" class="contact-svg"></th>
+      <th colspan="2" class="table-title">Phone</th>
+      </tr>
+      <tr>
+      <td></td>
+      <td>+44 7713082032</td>
+      </tr>
 
-          <tr>
-            <th><img src="images/email.svg" alt="Email" class="contact-svg"></th>
-            <th colspan="2" class="table-title">Email</th>
-          </tr>
-          <tr>
-            <td></td>
-            <td>mario.dryas99@gmail.com</td>
-          </tr>
+      <tr>
+      <th><img src="images/email.svg" alt="Email" class="contact-svg"></th>
+      <th colspan="2" class="table-title">Email</th>
+      </tr>
+      <tr>
+      <td></td>
+      <td>info@crystalcleancarwash.co.uk</td>
+      </tr>
 
-          <tr>
-            <th><img src="images/location.png" alt="Location" class="contact-svg"></th>
-            <th colspan="2" class="table-title">Location</th>
-          </tr>
-          <tr>
-            <th colspan="2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.9653533342007!2d-0.21612398450981174!3d50.83180566769408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48759a9119e0a061%3A0x2cd5d2cfe84068c5!2s24%20Church%20Rd%2C%20Portslade%2C%20Brighton%20BN41%201LA!5e0!3m2!1sen!2suk!4v1667678737022!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></th>
-          </tr>
+      <tr>
+      <th><img src="images/location.png" alt="Location" class="contact-svg"></th>
+      <th colspan="2" class="table-title">Location</th>
+      </tr>
+      <tr>
+      <th colspan="2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.9653533342007!2d-0.21612398450981174!3d50.83180566769408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48759a9119e0a061%3A0x2cd5d2cfe84068c5!2s24%20Church%20Rd%2C%20Portslade%2C%20Brighton%20BN41%201LA!5e0!3m2!1sen!2suk!4v1667678737022!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></th>
+      </tr>
 
-          <tr>
-            <td colspan="2">
-              <div class="scroll-downs">
-                <div class="mousey">
-                  <div class="scroller"></div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="email-msg" colspan="2">* For all email enquiries, please complete the below form *</td>
-          </tr>
+      <tr>
+      <td colspan="2">
+        <div class="scroll-downs">
+          <div class="mousey">
+            <div class="scroller"></div>
+          </div>
+        </div>
+      </td>
+      </tr>
+      <tr>
+      <td class="email-msg" colspan="2">* For all email enquiries, please complete the below form *</td>
+      </tr>
 
-        </table>
+    </table>
 
         </div>
 
@@ -324,21 +275,18 @@
 
   <!-- Footer -->
   <footer class="footer" id="footer">
+    <span><a href="https://www.youtube.com/" target=”_blank”><img src="images/youtube.png" alt="YouTube"></a></span>
+    <span><a href="https://twitter.com/" target=”_blank”><img src="images/twitter.png" alt="Twitter"></a></span>
     <span><a href="https://www.instagram.com/" target=”_blank”><img src="images/instagram.png" alt="Instagram"></a></span>
     <span><a href="https://en-gb.facebook.com/" target=”_blank”><img src="images/facebook.png" alt="Facebook"></a></span>
-    <span><a href="https://twitter.com/" target=”_blank”><img src="images/twitter.png" alt="Twitter"></a></span>
     <span><a href="https://www.linkedin.com/" target=”_blank”><img src="images/linkedin.png" alt="LinkedIn"></a></span>
     <br>
-    <span class="copyright"><a href="https://www.linkedin.com/" target=”_blank”> 	&copy; MD Web Technologies </a></span>
+    <span class="copyright"><a href="https://www.linkedin.com/" target=”_blank”> All Rights Reserved &copy; 2023 CrystalCleanCarwash </a></span>
   </footer>
   <!-- footer end -->
 
-
-
-
-<script src="scripts/script2.js"></script>
+<script src="scripts/script.js"></script>
 <script src="scripts/typed.js/typed.js"></script>
-
 
 <script>
 var typed = new Typed('.type', {
@@ -354,7 +302,6 @@ var typed = new Typed('.type', {
    loop: true
 });
 </script>
-
 
 <script type="text/javascript">
 addEventListener("load", function() {
