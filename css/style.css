@@ -60,7 +60,7 @@ html,body {
 	color:black;
 	background-color: #E5AF00;
 	border: none;
-	padding: 2vh 5vh;
+	padding: 1.5vh 1.5vh;
 	text-align: center;
 	cursor: pointer;
 	transition-duration: 0.2s;
@@ -87,8 +87,8 @@ html,body {
   min-height: 100vh;
   z-index: 998;
   height: -webkit-fill-available;
-  background: linear-gradient(-175deg, #F8F8F8 50%, #202A44 50%);
-  border: 2px solid black;
+  background: linear-gradient(-170deg, #F8F8F8 50%, #4897A9 50%);
+  /*border: 2px solid black;*/
 }
 
 .about_containter{
@@ -121,7 +121,7 @@ html,body {
 }
 
 .about_containter > p{
-  color: #9A9A9A;
+  color: black;
 }
 
 .portrait > img{
@@ -139,9 +139,8 @@ html,body {
 .services-page{
   position: relative;
   min-height: 100vh;
-  background: linear-gradient(-175deg, #202A44 50%, #F8F8F8 50%);
+  background: linear-gradient(-170deg, #4897A9 50%, #F8F8F8 50%);
   z-index: 998;
-  border: 2px solid black;
 }
 
 /*----------------------------------------------------------------
@@ -151,7 +150,6 @@ html,body {
   min-height: 100vh;
   background: #F8F8F8;
   z-index: 998;
-  border: 2px solid black;
   text-align: center;
 }
 
@@ -356,6 +354,10 @@ footer img{
 @media (max-width: 768px) {
 #myTable{
   width: 90%;
+}
+
+.homecenter img{
+  width: 30vh;
 }
 
 .about_containter{
