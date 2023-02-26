@@ -24,7 +24,7 @@ html,body {
   position: absolute;
   width: 90vw;
   padding: 10px;
-  top: calc(50% + 4vh);
+  top: calc(50%);
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -33,6 +33,7 @@ html,body {
   z-index: -99;
   margin: 0;
   word-wrap: break-word;
+  /*border: red 2px solid;*/
 }
 
 .homecenter p{
@@ -88,7 +89,7 @@ html,body {
   z-index: 998;
   height: -webkit-fill-available;
   background: linear-gradient(-170deg, #F8F8F8 50%, #4897A9 50%);
-  /*border: 2px solid black;*/
+  border: 1px solid grey;
 }
 
 .about_containter{
@@ -141,6 +142,18 @@ html,body {
   min-height: 100vh;
   background: linear-gradient(-170deg, #4897A9 50%, #F8F8F8 50%);
   z-index: 998;
+  border: 1px solid grey;
+}
+
+
+/*----------------------------------------------------------------
+[ booking ]*/
+.booking-page{
+  position: relative;
+  min-height: 100vh;
+  background: #F8F8F8;
+  z-index: 998;
+  border: 1px solid grey;
 }
 
 /*----------------------------------------------------------------
@@ -151,6 +164,7 @@ html,body {
   background: #F8F8F8;
   z-index: 998;
   text-align: center;
+  border: 1px solid grey;
 }
 
 /*----------------------------------------------------------------
